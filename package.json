@@ -42,10 +42,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "git-stats.showStats",
-        "title": "Show Git Stats"
+        "command": "code-activity-tracker.showStats",
+        "title": "Show Git Stats",
+        "icon": "$(graph-line)"
       }
-    ]
+    ],
+    "menus": {
+      "scm/title": [
+        {
+					"when": "scmProvider == git",
+					"command": "code-activity-tracker.showStats",
+					"group": "navigation"
+				}
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
