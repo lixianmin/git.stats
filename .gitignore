@@ -14,9 +14,16 @@ resources/.arch-internal-preview.css
 .arch-internal-preview.css
 node_modules/
 
+# Dependencies
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
 # VS Code Extension Package
 *.vsix
 
 # Source Map files
 *.map
 out/
+dist/
